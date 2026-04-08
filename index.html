@@ -2,14 +2,95 @@
 <html>
 <head>
     <title>StreetConnect</title>
-    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial;
+            background: #fafafa;
+            text-align: center;
+        }
+
+        /* Header */
+        .header {
+            background: #e23744;
+            color: white;
+            padding: 20px;
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        .subtitle {
+            color: #555;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        /* Container */
+        .container {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        /* Cards */
+        .card {
+            background: white;
+            width: 220px;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            cursor: pointer;
+            transition: 0.3s;
+            text-decoration: none;
+            color: black;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .icon {
+            font-size: 40px;
+        }
+
+        .title {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .desc {
+            font-size: 14px;
+            color: gray;
+            margin-top: 5px;
+        }
+
+    </style>
 </head>
+
 <body>
 
-<h1>StreetConnect</h1>
+<div class="header">🍔 StreetConnect</div>
+<div class="subtitle">Connecting street food vendors with customers</div>
 
-<a href="vendor.html">Vendor</a>
-<a href="customer.html">Customer</a>
+<div class="container">
+
+    <a href="vendor.html" class="card">
+        <div class="icon">👨‍🍳</div>
+        <div class="title">Vendor</div>
+        <div class="desc">Add your food stall & reach customers</div>
+    </a>
+
+    <a href="customer.html" class="card">
+        <div class="icon">🍔</div>
+        <div class="title">Customer</div>
+        <div class="desc">Find nearby street food vendors</div>
+    </a>
+
+</div>
 
 </body>
 </html>
